@@ -30,33 +30,30 @@ const CompanyList = (props) => {
         >
           <div className="container-fluid py-1 px-3">
             <nav aria-label="breadcrumb">
-              <h6 className="font-weight-bolder text-white mb-0">
+              <h3 className="font-weight-bolder text-white mb-0">
                 List of company Names{' '}
-              </h6>
+              </h3>
             </nav>
           </div>
         </nav>
 
-        <div className="container-fluid py-4">
+        <div className="container-fluid px-4 pb-4">
           <div className="row">
             <div className="col-12">
               <div className="card mb-4">
-                <div className="card-header pb-0">
-                  <h6>Authors table</h6>
-                </div>
-                <div className="card-body px-0 pt-0 pb-2">
+                <div className="card-body px-0 pt-4 pb-4">
                   <div className="table-responsive p-0">
                     <table className="table align-items-center mb-0">
                       <thead>
                         {list ? (
                           <tr>
-                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                            <th className="text-uppercase text-secondary text-xs font-weight-bolder opacity-9">
                               Company Name
                             </th>
-                            <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                            <th className="text-uppercase text-secondary text-xs font-weight-bolder opacity-9 ps-2">
                               Email
                             </th>
-                            <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                            <th className="text-center text-uppercase text-secondary text-xs font-weight-bolder opacity-9">
                               Status
                             </th>
                           </tr>
