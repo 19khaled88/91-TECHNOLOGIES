@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import './App.css'
 function App() {
+  const [companyList, setCompanyList] = useState(null)
+  const baseURL = 'http://demo2211087.mockable.io/mock'
+
+  useEffect(() => {
+    axios.post(baseURL).then((response) => {
+      setCompanyList(response.data)
+    })
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h3>91 TECHNOLOGIES PRIVATE LIMITED</h3>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
