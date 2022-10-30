@@ -14,10 +14,7 @@ function App() {
 
   return (
     <div className="container">
-      <span>
-        {' '}
-        <h3>91 TECHNOLOGIES PRIVATE LIMITED</h3>
-      </span>
+      <span> </span>
       <CompanyList companyList={companyList} />
     </div>
   )
